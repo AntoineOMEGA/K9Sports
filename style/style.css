@@ -1,0 +1,1190 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Luckiest+Guy|Rubik&display=swap');
+
+:root {
+    --header-font: "Luckiest Guy";
+    --header-font-size-large: 2.5rem;
+    --header-font-size-medium: 2rem;
+    --header-font-size-small: 1.5rem;
+
+    --body-font: "Rubik";
+    --body-font-size-large: 1.4rem;
+    --body-font-size-medium: 1rem;
+    --body-font-size-small: 0.8rem;
+
+    --nav-font: "Bebas Neue";
+    --nav-font-size: 1.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+    font-weight: normal;
+    font-size: var(--body-font-size-medium);
+    letter-spacing: 1px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    z-index: 10;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: #00000044;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 10px;
+    width: 280px;
+    height: 60px;
+    color: #FFF;
+    background-image: url("../images/title.svg");
+    background-size: contain;
+}
+
+#menu-button {
+    display: none;
+    outline: none;
+}
+
+.nav-transparent {
+    background-color: #00000000;
+}
+
+.nav-translucent {
+    background-color: #00000044;
+}
+
+.nav-translucent a:hover, .nav-transparent a:hover {
+    background-color: #00000088;
+}
+
+.nav-black {
+    background-color: #111;
+}
+
+.nav-black nav {
+    background-color: #111;
+}
+
+.nav-black a:hover {
+    background-color: #DD6000;
+}
+
+nav ul{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li {
+    height: 80px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #00000088;
+}
+
+nav ul li a:active {
+    background-color: #00000088;
+}
+
+nav ul li a {
+    height: 80px;
+    width: auto;
+    padding: 27px;
+    display: inline-block;
+    font-family: var(--nav-font);
+    font-size: var(--nav-font-size);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFF;
+}
+
+/*PAGES*/
+
+main {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.hero {
+    height: 600px;
+    width: 100%;
+}
+
+#hero-index {
+    background-image: url('../images/english-cocker-spaniel-puppy-sitting-on-ground-beside-grass-1254140.jpg');
+    background-position-y: 25%;
+}
+
+#hero-classes {
+    background-image: url('../images/adult-portuguese-podengo-on-railroad-1097209.jpg');
+}
+
+#hero-seminars {
+    background-image: url('../images/swan-on-lake-against-mountain-247522.jpg');
+}
+
+#hero-puppyclass {
+    background-image: url('../images/black-and-brown-rottweiler-puppy-1307630.jpg');
+    background-position-y: 30%;
+}
+
+#hero-obedienceclass {
+    background-image: url('../images/dog-sits-on-green-grass-2737393.jpg');
+    background-position-y: top;
+}
+
+#hero-rallyclass {
+    background-image: url('../images/nature-animal-dog-pet-33053.jpg');
+}
+
+#hero-scentworkclass {
+    background-image: url('../images/animal-canine-close-up-dog-412465.jpg');
+}
+
+#hero-aboutus {
+    background-image: url('../images/doberman-pinscher-prone-lying-on-grass-1242419.jpg');
+    background-position: center 25%;
+}
+
+#hero-contactus {
+    background-image: url('../images/beagle-running-between-grasses-1459397.jpg');
+}
+
+.hero-content {
+    height: 100%;
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero-content a:hover {
+    background-color: #DD6000;
+}
+
+.hero-content a {
+    height: 90px;
+    width: 380px;
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-large);
+    line-height: 90px;
+    background-color: #FF8000;
+    border-radius: 90px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+#introduction, #upcoming-seminars, #training-reasons, #about-container {
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr repeat(9, minmax(100px, 150px)) 1fr;
+}
+
+#introduction-text {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    margin: 40px 0;
+}
+
+#introduction-text h1 {
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-large);
+    margin-bottom: 20px;
+}
+
+#introduction-text p {
+    font-size: var(--body-font-size-large);
+    text-indent: 20px;
+    margin-left: 10px;
+}
+
+#barn-logo {
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/logo.svg");
+    grid-column-start: 7;
+    grid-column-end: 11;
+}
+
+#reasons-image {
+    background-image: url("../images/001-paw-1.svg");
+    background-size: contain;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    margin: 50px;
+}
+
+#about-container {
+    background-color: #EEE;
+}
+
+#about-image {
+    background-image: url("../images/001-paw-1.svg");
+    background-size: contain;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    margin: 50px;
+}
+
+#reasons-text, #about-text {
+    grid-column-start: 6;
+    grid-column-end: 11;
+}
+
+#reasons-text h3 {
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-medium);
+    margin-bottom: 25px;
+}
+
+#reasons-text h4 {
+    font-weight: bold;
+    font-size: var(--header-font-size-small);
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+#reasons-text p, #about-text p{
+    margin-left: 15px;
+    text-indent: 15px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+#dog-icon {
+    height: 300px;
+    background-size: contain;
+    background-image: url("../images/005-dog-1.svg");
+    grid-column-start: 8;
+    grid-column-end: 11;
+}
+
+#class-list {
+    background-color: #EEEEEE;
+    padding: 30px 0;
+
+    display: grid;
+    grid-template-columns: 1fr repeat(8, minmax(100px, 150px)) 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.class-overview {
+    background-color: #FF8000;
+    padding: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.class-overview:hover {
+    background-color: #DD6000;
+}
+
+#puppy-class-overview {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#obedience-class-overview {
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+#rally-class-overview {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+#scentwork-class-overview {
+    grid-column-start: 8;
+    grid-column-end: 10;
+}
+
+.class-overview-image {
+    height: 250px;
+    width: 250px;
+    background-size: 70%;
+    margin: 0 auto;
+}
+
+#puppy-class-overview-image {
+    background-image: url("../images/005-dog-3.svg");
+}
+
+#obedience-class-overview-image {
+    background-image: url("../images/003-dog.svg");
+}
+
+#rally-class-overview-image {
+    background-image: url("../images/007-dog-4.svg");
+}
+
+#scentwork-class-overview-image {
+    background-image: url("../images/001-dog-2.svg");
+}
+
+.class-overview-text {
+    width: 250px;
+}
+
+.class-overview-text h3 {
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-medium);
+    margin: 15px 0;
+}
+
+.class-overview-text p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.class-overview-text ul {
+    margin-left: 30px;
+    font-family: var(--body-font);
+    list-style-type: square;
+}
+
+.class-overview-text li {
+    line-height: 25px;
+}
+
+#upcoming-seminars {
+    background-color: #EEE;
+}
+
+#upcoming-seminars h2 {
+    grid-column-start: 2;
+    grid-column-end: 11;
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-medium);
+    margin-bottom: 40px;
+}
+
+#upcoming-seminars a {
+    text-decoration: none;
+}
+
+#seminars {
+    grid-column-start: 2;
+    grid-column-end: 11;
+
+    display: grid;
+    justify-content: space-between;
+}
+
+#seminar-1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin-right: 10px;
+}
+
+#seminar-2 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    margin: 0 10px;
+}
+
+#seminar-3 {
+    grid-column-start: 8;
+    grid-column-end: 11;
+    margin-left: 10px;
+}
+
+.seminar {
+    height: 250px;
+}
+
+.seminar-background {
+    height: 200px;
+}
+
+.seminar-background h3 {
+    color: #FFF;
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-medium);
+    padding: 15px;
+    height: 100%;
+    background-color: #00000044;
+}
+
+.seminar-background h3:hover {
+    background-color: #00000088;
+}
+
+#seminar-1-background {
+    background-image: url("../images/nature-sky-clouds-outside-68669.jpg");
+}
+
+#seminar-2-background {
+    background-image: url("../images/adult-tan-great-dane-standing-on-top-of-mountain-under-white-838409.jpg");
+}
+
+#seminar-3-background {
+    background-image: url("../images/photo-of-golden-retriever-1959055.jpg");
+}
+
+.seminar-bar {
+    background-color: #FF8000;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seminar-bar p {
+    color: #000;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.seminar-bar .date {
+    font-weight: bold;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr repeat(9, minmax(100px, 150px)) 1fr;
+    padding: 0 20px;
+}
+
+.list h1 {
+    font-family: var(--header-font);
+    font-size: 3.5rem;
+    grid-column-start: 2;
+    grid-column-end: 11;
+    margin: 40px 25px;
+}
+
+.list-container {
+    grid-column-start: 2;
+    grid-column-end: 11;
+}
+
+.list-item {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.list-item-image {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 350px;
+}
+
+#class-puppy {
+    background-image: url('../images/black-and-brown-rottweiler-puppy-1307630.jpg');
+}
+
+#class-obedience {
+    background-image: url('../images/dog-sits-on-green-grass-2737393.jpg');
+}
+
+#class-rally {
+    background-image: url('../images/nature-animal-dog-pet-33053.jpg');
+}
+
+#class-scentwork {
+    background-image: url('../images/animal-canine-close-up-dog-412465.jpg');
+}
+
+#seminar-1, #seminar-1-img {
+    background-image: url('../images/nature-sky-clouds-outside-68669.jpg');
+}
+
+#seminar-2, #seminar-2-img {
+    background-image: url('../images/adult-tan-great-dane-standing-on-top-of-mountain-under-white-838409.jpg');
+}
+
+#seminar-3, #seminar-3-img {
+    background-image: url('../images/photo-of-golden-retriever-1959055.jpg');
+}
+
+.list-item-bar h2 {
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-medium);
+    color: #FFF;
+    height: 100%;
+}
+
+.list-item-bar {
+    background-color: #FF8000;
+    height: 60px;
+    width: 100%;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.list-item-bar p, .list-item-details strong {
+    font-family: var(--header-font);
+}
+
+.list-item-text {
+    background-color: #EEE;
+    height: 290px;
+    padding: 20px;
+}
+
+.list-item-details {
+    margin-bottom: 15px;
+}
+
+.list-item-description {
+    text-indent: 20px;
+    text-overflow: clip;
+}
+
+.class-list-description {
+    height: 78px;
+    overflow: hidden;
+}
+
+.list-item a {
+    height: 40px;
+    width: auto;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-small);
+    margin: 20px auto;
+    line-height: 20px;
+}
+
+.list-item a:hover {
+    background-color: #DD6000;
+    color: #FFF;
+}
+
+#gallery {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr repeat(9,  minmax(100px, 150px)) 1fr;
+    grid-auto-rows: minmax(100px, 150px);
+}
+
+.gallery-image {
+    margin: 15px;
+    grid-column: span 3;
+    grid-row: span 3;
+}
+
+#gallery-image-1 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-image: url('../images/image11.jpg');
+}
+
+#gallery-image-2 {
+    background-image: url('../images/image10.jpg');
+}
+
+#gallery-image-3 {
+    background-image: url('../images/image9.jpg');
+}
+
+#gallery-image-4 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-image: url('../images/image7.jpg');
+}
+
+#gallery-image-5 {
+    background-image: url('../images/image6.jpg');
+}
+
+#gallery-image-6 {
+    background-image: url('../images/image5.jpg');
+}
+
+#gallery-image-7 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-image: url('../images/image3\ \(2\).jpg');
+}
+
+#gallery-image-8 {
+    background-image: url('../images/image1\ \(2\).jpg');
+}
+
+#gallery-image-9 {
+    background-image: url('../images/image0\ \(1\).jpg');
+}
+
+.class-contents {
+    display: grid;
+    grid-template-columns: 1fr repeat(9,  minmax(100px, 150px)) 1fr;
+    grid-auto-rows: auto;
+    row-gap: 30px;
+    padding: 50px 20px;
+}
+
+.class-text {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    padding-bottom: 50px;
+}
+
+.class-contents h1 {
+    width: auto;
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-large);
+    background-color: #FF8000;
+    height: 70px;
+    padding: 11px 30px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.class-contents p {
+    margin: 20px 20px;
+}
+
+.class-contents ul {
+    list-style: square;
+    margin: 20px 20px;
+}
+
+.class-contents li {
+    margin: 10px 15px;
+}
+
+.class-contents li strong {
+    font-weight: bold;
+}
+
+.class-contents h4 {
+    margin: 20px 5px;
+    font-weight: bold;
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-small);
+}
+
+.class-contents a {
+    height: 40px;
+    width: auto;
+    background-color: #FF8000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-small);
+    margin: 20px auto;
+    line-height: 20px;
+}
+
+.class-contents a:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.paw {
+    background-size: contain;
+    height: 300px;
+    grid-column-start: 7;
+    grid-column-end: 11;
+}
+
+#paw-1 {
+    background-image: url('../images/001-paw-1.svg');
+}
+
+#paw-2 {
+    background-image: url('../images/002-paw.svg');
+}
+
+#bone-1 {
+    background-image: url('../images/003-bone.svg');
+}
+
+#dog-1 {
+    background-image: url('../images/004-dog.svg');
+}
+
+#dog-2 {
+    background-image: url('../images/005-dog-1.svg');
+}
+
+#dog-3 {
+    background-image: url('../images/006-dog-2.svg');
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr repeat(9,  minmax(100px, 150px)) 1fr;
+    grid-auto-rows: auto;
+    row-gap: 30px;
+}
+
+.contact-form {
+    margin: 50px 0;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.contact-form h1 {
+    font-family: var(--header-font);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form input {
+    height: 50px;
+    padding: 15px;
+    background-color: #EEE;
+    border: none;
+    margin-bottom: 30px;
+    font-size: var(--body-font-size-large);
+}
+
+.contact-form textarea {
+    height: 300px;
+    padding: 15px;
+    background-color: #EEE;
+    border: none;
+    margin-bottom: 30px;
+    resize: none;
+    overflow-y: auto;
+    font-size: var(--body-font-size-large);
+}
+
+.contact-form #send {
+    height: 50px;
+    padding: 0;
+    width: 300px;
+    background-color: #FF8000;
+    font-family: var(--header-font);
+    font-size: var(--header-font-size-medium);
+    border-radius: 50px;
+    margin: 0 auto;
+    border: none;
+}
+
+.contact-form #send:hover {
+    background-color: #DD6000;
+}
+
+.social-media-container {
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
+
+.social-media {
+    background-color: #EEE;
+    padding: 25px;
+    display: grid;
+    grid-auto-rows: 100px;
+    height: 100%;
+}
+
+.social-media a {
+    background-size: 75%;
+    height: 80px;
+    width: 80px;
+    display: block;
+}
+
+.social-media #facebook {
+    background-image: url("../images/facebook.svg");
+}
+
+.social-media #instagram {
+    background-image: url("../images/instagram.svg");
+}
+
+.social-media #twitter {
+    background-image: url("../images/twitter.svg");
+}
+
+/* FOOTER */
+footer {
+    height: auto;
+    background-color: #111;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-auto-rows: auto;
+}
+
+footer p, footer a {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 20px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a {
+    margin: 0;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 1200px) {
+
+    .hero-content {
+        width: 800px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr repeat(9,  minmax(20px, 100px)) 1fr;
+    }
+
+    #introduction, #upcoming-seminars {
+        grid-template-columns: 1fr repeat(9, minmax(50px, 100px)) 1fr;
+    }
+
+    .class-overview {
+        background-color: #FF8000;
+        padding: 15px;
+        color: #000;
+        text-decoration: none;
+    }
+    
+    #puppy-class-overview {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+    
+    #obedience-class-overview {
+        grid-column-start: 6;
+        grid-column-end: 10;
+    }
+    
+    #rally-class-overview {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+    
+    #scentwork-class-overview {
+        grid-column-start: 6;
+        grid-column-end: 10;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    header {
+        display: grid;
+        grid-auto-rows: auto;
+    }
+
+    .logo {
+        display: block;
+        width: 200px;
+    }
+
+    nav {
+        display: block;
+        background-color: #00000044;
+        width: 100vw;
+        height: 80px;
+    }
+
+    nav ul {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    nav li {
+        width: 19.2vw;
+    }
+    
+    nav a {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 700px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+        grid-column-start: 2;
+        grid-column-end: 11;
+    }
+
+    .social-media-container {
+        grid-column-start: 1;
+        grid-column-end: 11;
+    }
+
+    .social-media {
+        display: flex;
+    }
+
+    footer {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    footer p {
+        text-align: center;
+        padding: 0;
+        grid-column: span 3;
+    }
+
+    #atr {
+        grid-row-start: 3;
+        grid-column: span 3;
+    }
+
+    #atr, #atr a {
+        font-size: 0.8rem;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: 1fr repeat(9, minmax(20px, 100px)) 1fr;
+        padding: 0 20px;
+    }
+
+    .list-item-image {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 350px;
+    }
+
+    .list-item-container {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .list-item-text {
+        height: auto;
+    }
+
+    .class-contents {
+        grid-template-columns: 1fr repeat(9,  minmax( 20px, 100px)) 1fr;
+    }
+
+    .class-text {
+        grid-column-start: 2;
+        grid-column-end: 11;
+    }
+
+    .paw {
+        grid-column-start: 2;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        height: 200px;
+    }
+
+    #about-container {
+        grid-template-columns: 1fr repeat(9, minmax(20px, 100px)) 1fr;
+    }
+
+    #about-image {
+        background-image: url("../images/001-paw-1.svg");
+        background-size: contain;
+        grid-column-start: 2;
+        grid-column-end: 11;
+        height: 300px;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    #reasons-text, #about-text {
+        grid-column-start: 2;
+        grid-column-end: 11;
+    }
+
+    #reasons-image {
+        height: 300px;
+        grid-column-start: 2;
+        grid-column-end: 11;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr repeat(9,  minmax(20px, 100px)) 1fr;
+        grid-auto-rows: minmax(20px, 100px);
+    }
+
+    #introduction, #upcoming-seminars, #training-reasons, #about-container {
+        grid-template-columns: 1fr repeat(9, minmax(20px, 100px)) 1fr;
+    }
+
+    #class-list {
+        grid-template-columns: 1fr repeat(8, minmax(20px, 100px)) 1fr;
+    }
+    
+    #introduction-text {
+        grid-column-start: 2;
+        grid-column-end: 11;
+    }
+
+    #barn-logo {
+        grid-row-start: 1;
+        height: 400px;
+        grid-column-start: 2;
+        grid-column-end: 11;
+    }
+
+    #dog-icon {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 11;
+    }
+
+    .seminar-background {
+        background-position-y: 70%;
+    }
+
+    #seminar-1, #seminar-2, #seminar-3 {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #seminar-1-background {
+        background-position-y: 40%;
+    }
+
+    #seminar-1 {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        margin-right: 10px;
+    }
+
+    #seminar-2 {
+        grid-column-start: 7;
+        grid-column-end: 11;
+        margin-left: 10px;
+    }
+
+    #seminar-3 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        display: grid;
+        grid-template-columns: 200px 80px;
+        grid-auto-rows: auto;
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
+    #menu-button {
+        height: 80px;
+        width: 80px;
+        background: none;
+        border: none;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #menu {
+        color: #FFF;
+        line-height: 80px;
+        font-size: 60px;
+    }
+
+    nav {
+        height: 400px;
+        overflow: hidden;
+        display: none;
+    }
+
+    nav li, nav li a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content a {
+        margin: 120px auto;
+        width: 90%;
+    }
+
+    #upcoming-seminars h2 {
+        text-align: center;
+    }
+
+    #seminar-1, #seminar-2, #seminar-3 {
+        grid-column-start: 2;
+        grid-column-end: 11;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #class-list {
+        grid-template-columns: 1fr repeat(8, minmax(20px, 50px)) 1fr;
+    }
+    
+    .gallery-image {
+        grid-column: span 11 !important;
+    }
+
+    #gallery-image-2 {
+        background-position-y: 80%;
+    }
+
+    #gallery-image-3 {
+        background-position-y: 20%;
+    }
+
+    #gallery-image-6 {
+        background-position-y: 30%;
+    }
+
+    #gallery-image-7 {
+        background-position-y: 40%;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #puppy-class-overview, #obedience-class-overview, #rally-class-overview, #scentwork-class-overview {
+        grid-column-start: 2;
+        grid-column-end: 10;
+    }
+
+    .class-text h1 {
+        font-size: 1.7rem;
+        padding: 18px;
+    }
+
+    .class-contents a {
+        font-size: 1rem;
+    }
+}
